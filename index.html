@@ -64,23 +64,49 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 px-0" style="margin-bottom: 90px;">
-        <div class="row mx-0 align-items-center">
+    <div class="container-fluid bg-primary py-5 px-0" >
+        <div class="row mx-0 align-items-center mb-5">
             <div class="col-lg-6 px-md-5 text-center text-lg-left">
                 <h1 class="display-2 text-uppercase mb-3">Best Digital Marketing Agency</h1>
-                <p class="text-dark mb-4">Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit.
-                    Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed ipsum at ipsum nonumy amet. Clita
-                    lorem dolore sed stet et est justo dolore.</p>
-                    <a href="tel:+123456789" class="btn btn-dark text-uppercase mt-1 py-3 px-5">Contacteaza-ne</a>
+                <p class="text-dark mb-4">Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit. Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed ipsum at ipsum nonumy amet. Clita lorem dolore sed stet et est justo dolore.</p>
+    
+                <!-- Butonul de telefon va fi afișat doar pe ecrane mai mici de 768px -->
+                <a href="tel:+123456789" class="btn btn-dark text-uppercase mt-1 py-3 px-5 btn-phone text-center" style="display: block; width: 100%;">Contacteaza-ne</a>
+    
+                <!-- Butonul de site va fi afișat doar pe ecrane de 768px sau mai mari -->
+                <a href="about.html" class="btn btn-dark text-uppercase mt-1 py-3 px-5 btn-site" style="display: none; width: 50%;">Contacteaza-ne</a>
             </div>
             <div class="col-lg-6 px-0 text-right">
                 <img class="img-fluid mt-5 mt-lg-0 d-none d-lg-block" src="header.png" alt="">
             </div>
         </div>
     </div>
+    
+    <style>
+        @media (min-width: 768px) {
+            .btn-phone {
+                display: none !important;
+            }
+            .btn-site {
+                display: inline-block !important;
+            }
+        }
+    </style>
+    
+    
     <!-- Header End -->
 
-
+<!-- OFERTA -->
+<div class="container-fluid black-line">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="about.html" >Descoperă Oferta Noastră Exclusivă!
+                    <i class="fas fa-arrow-right ml-2"></i>                </a>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- About Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
@@ -265,32 +291,34 @@
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
-            <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Parerea Clientilor</h1>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item position-relative text-center rounded p-4">
                     <img class="img-fluid rounded mx-auto my-4" src="testimonial-1.jpg" alt="">
-                    <h5 class="text-uppercase">Client Name</h5>
-                    <p class="text-uppercase">Profession</p>
+                    <h5 class="text-uppercase">La Fleur</h5>
+                    <p class="text-uppercase">Florarie</p>
                     <p class="text-secondary">Tempor lorem dolor sea et ipsum, lorem justo kasd dolore vero eos. Lorem duo ipsum sea amet et clita dolor</p>
                 </div>
                 <div class="testimonial-item position-relative text-center rounded p-4">
                     <img class="img-fluid rounded mx-auto my-4" src="testimonial-2.jpg" alt="">
-                    <h5 class="text-uppercase">Client Name</h5>
-                    <p class="text-uppercase">Profession</p>
+                    <h5 class="text-uppercase">Top Auto Agro</h5>
+                    <p class="text-uppercase">Service Auto</p>
                     <p class="text-secondary">Tempor lorem dolor sea et ipsum, lorem justo kasd dolore vero eos. Lorem duo ipsum sea amet et clita dolor</p>
                 </div>
                 <div class="testimonial-item position-relative text-center rounded p-4">
                     <img class="img-fluid rounded mx-auto my-4" src="testimonial-3.jpg" alt="">
-                    <h5 class="text-uppercase">Client Name</h5>
-                    <p class="text-uppercase">Profession</p>
+                    <h5 class="text-uppercase">Auto Pontus</h5>
+                    <p class="text-uppercase">Scoala Auto</p>
                     <p class="text-secondary">Tempor lorem dolor sea et ipsum, lorem justo kasd dolore vero eos. Lorem duo ipsum sea amet et clita dolor</p>
                 </div>
-                <div class="testimonial-item position-relative text-center rounded p-4">
+            
+               <!--<div class="testimonial-item position-relative text-center rounded p-4">
                     <img class="img-fluid rounded mx-auto my-4" src="testimonial-4.jpg" alt="">
                     <h5 class="text-uppercase">Client Name</h5>
                     <p class="text-uppercase">Profession</p>
                     <p class="text-secondary">Tempor lorem dolor sea et ipsum, lorem justo kasd dolore vero eos. Lorem duo ipsum sea amet et clita dolor</p>
                 </div>
+            --> 
             </div>
         </div>
     </div>
