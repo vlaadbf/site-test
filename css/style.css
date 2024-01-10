@@ -41,6 +41,28 @@
   display: block;
   height: 100%;
 }
+.carousel-container {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.carousel-text {
+  display: inline-block;
+  padding: 0px;
+  color: #000;
+  font-weight: bold;
+  margin-right: 0px;
+  font-size: 20px;
+  animation: moveLeft 8s linear infinite;
+  font-family:var(--font-family-monospace);
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -131,12 +153,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(197, 197, 197, 0.507), rgba(0, 0, 0, 0.5)); /* Ajustează aici opacitatea și culoarea overlay-ului */
+  background: linear-gradient(to right, rgba(63, 63, 63, 0.507), rgba(0, 0, 0, 0.5)); /* Ajustează aici opacitatea și culoarea overlay-ului */
   z-index: -1;
 }
 @media screen and (max-width: 767px) {
   .overlay {
-      background: linear-gradient(to bottom, rgba(197, 197, 197, 0.507), rgba(0, 0, 0, 0.5)); /* Gradient pentru dispozitive mobile */
+      background: linear-gradient(to bottom, rgba(63, 63, 63, 0.507), rgba(0, 0, 0, 0.5)); /* Gradient pentru dispozitive mobile */
   }
 }
 .video-fluid {
@@ -154,19 +176,19 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 .btn-site,
 .btn-phone {
-  background-color: #e8b142 !important;
-  color: #010101 !important;
+  background-color: #0000005c !important;
+  color: #ffffff !important;
   font-weight: bold !important;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adaugă o tranziție și pentru efectul de hover al umbrei */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adaugă o umbră inițială */
-  border: none !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Creșteți valoarea pentru o umbră mai pronunțată */
+  border: 2px solid #fdd55063 !important; /* Adaugă un border de 2px, negru */
+
 }
-.footer{
-  background-color: #0C2233;
-}
+
+
 .btn-site:hover,
 .btn-phone:hover {
-  background-color: #f0c95a !important; /* Ajustează culoarea pentru starea de hover */
+  background-color: #90711b89 !important; /* Ajustează culoarea pentru starea de hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adaugă o umbră mai pronunțată la hover */
 }
 
@@ -180,6 +202,7 @@ body {
   color: #686A6F;
   text-align: left;
   background-color: #fff;
+
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -483,7 +506,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   line-height: 1.2;
-  color: #102c41;
+  color: #161616;
 }
 
 h1, .h1 {
