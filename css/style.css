@@ -158,7 +158,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 @media screen and (max-width: 767px) {
   .overlay {
-      background: linear-gradient(to bottom, rgba(63, 63, 63, 0.507), rgba(0, 0, 0, 0.5)); /* Gradient pentru dispozitive mobile */
+      background: linear-gradient(to bottom, rgba(53, 53, 53, 0.516), rgba(0, 0, 0, 0.829)); /* Gradient pentru dispozitive mobile */
   }
 }
 .video-fluid {
