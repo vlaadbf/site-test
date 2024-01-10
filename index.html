@@ -64,11 +64,12 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 px-0" >
-        <div class="row mx-0 align-items-center mb-5">
+    <header class="container-fluid py-5 px-0 video-header">
+        <div class="overlay"></div> <!-- Overlay negru transparent -->
+        <div class="row mx-0 align-items-center">
             <div class="col-lg-6 px-md-5 text-center text-lg-left">
-                <h1 class="display-2 text-uppercase mb-3">Best Digital Marketing Agency</h1>
-                <p class="text-dark mb-4">Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit. Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed ipsum at ipsum nonumy amet. Clita lorem dolore sed stet et est justo dolore.</p>
+                <h1 class="display-2 text-uppercase text-white mb-3">Best Digital Marketing Agency</h1>
+                <p class="text-white mb-4">Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit. Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed ipsum at ipsum nonumy amet. Clita lorem dolore sed stet et est justo dolore.</p>
     
                 <!-- Butonul de telefon va fi afișat doar pe ecrane mai mici de 768px -->
                 <a href="tel:+123456789" class="btn btn-dark text-uppercase mt-1 py-3 px-5 btn-phone text-center" style="display: block; width: 100%;">Contacteaza-ne</a>
@@ -76,11 +77,19 @@
                 <!-- Butonul de site va fi afișat doar pe ecrane de 768px sau mai mari -->
                 <a href="about.html" class="btn btn-dark text-uppercase mt-1 py-3 px-5 btn-site" style="display: none; width: 50%;">Contacteaza-ne</a>
             </div>
-            <div class="col-lg-6 px-0 text-right">
-                <img class="img-fluid mt-5 mt-lg-0 d-none d-lg-block" src="header.png" alt="">
-            </div>
         </div>
-    </div>
+        <video class="video-fluid" autoplay loop muted>
+            <source src="video.mp4" type="video/mp4">
+            <!-- Adaugă alte surse video pentru compatibilitatea cu browserele -->
+            <!-- <source src="video.webm" type="video/webm"> -->
+            <!-- <source src="video.ogv" type="video/ogg"> -->
+            Your browser does not support the video tag.
+        </video>
+    </header>
+    
+    
+    
+    
     
     <style>
         @media (min-width: 768px) {
