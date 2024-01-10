@@ -29,16 +29,17 @@
 <body>
     <!-- Navbar Start -->
     <div class="container-fluid bg-white position-relative">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand text-secondary">
-                <h1 class="display-4 text-uppercase">ClickGrowth</h1>
-            </a>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 d-flex justify-content-between">
+      
+        
+            <img src="logo2.png" alt="ClickGrowth Logo" class="logo-img" id="logo-img">         
+            
+
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ml-auto py-0 pr-3 border-right">
-                
+                <div class="order-lg-1 navbar-nav ml-auto py-0 pr-3 border-right">
                     <a href="about.html" class="nav-item nav-link">Despre</a>
                     <a href="project.html" class="nav-item nav-link">Proiecte</a>
                     <div class="nav-item dropdown">
@@ -50,16 +51,18 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="d-none d-lg-flex align-items-center pl-4">
+                <div class="order-lg-2 d-none d-lg-flex align-items-center pl-4">
                     <i class="fa fa-2x fa-mobile-alt text-primary mr-3"></i>
                     <div>
-                        <h6 class="text-body text-uppercase mb-1"><small>Contacteza-ne</small></h6>
+                        <h6 class="text-body text-uppercase mb-1"><small>Contacteaza-ne</small></h6>
                         <h6 class="m-0">+012 345 6789</h6>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
+    
+    
     <!-- Navbar End -->
 
 
@@ -352,11 +355,11 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-md-5" >
+    <div class="container-fluid footer text-white-50 py-5 px-sm-3 px-md-5" >
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 mt-n2 text-white display-4">NUME SITE</h1>
+                <a href="index.html" >
+                    <img src="logo.png" alt="ClickGrowth Logo" class="logo-img" >
                 </a>
                 <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
                 <h6 class="text-uppercase text-white py-2">Urmareste-ne</h6>
@@ -384,7 +387,7 @@
            
         </div>
     </div>
-    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #000000;">
         <p class="mb-2 text-center text-white-50">&copy; <a href="#">NUME SITE</a>. All Rights Reserved.</p>
         <p class="m-0 text-center text-white-50">Designed by <a href="#">NUME SITE</a></p>
     </div>
@@ -409,6 +412,16 @@
     <script src="mail/contact.js"></script>
 
     <script src="js/main.js"></script>
+    <script>
+        // Obținem elementul imaginii
+        var logoImgPhone = document.getElementById('logo-img');
+    
+        // Adăugăm un eveniment de click
+        logoImgPhone.addEventListener('click', function() {
+            // Redirecționăm către pagina specificată
+            window.location.href = 'index.html';
+        });
+    </script>
 </body>
 
 </html>
