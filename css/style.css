@@ -107,6 +107,41 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   color: rgb(206, 206, 206);
   text-decoration: none; /* Poți modifica acest aspect la hover */
 }
+.video-header {
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Setează înălțimea antetului la o valoare adecvată */
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(197, 197, 197, 0.507), rgba(0, 0, 0, 0.5)); /* Ajustează aici opacitatea și culoarea overlay-ului */
+  z-index: -1;
+}
+@media screen and (max-width: 767px) {
+  .overlay {
+      background: linear-gradient(to bottom, rgba(197, 197, 197, 0.507), rgba(0, 0, 0, 0.5)); /* Gradient pentru dispozitive mobile */
+  }
+}
+.video-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.text-white {
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5); /* Ajustează aici offset-ul și opacitatea umbrei */
+}
+
 body {
   margin: 0;
   font-family: "Rubik", sans-serif;
