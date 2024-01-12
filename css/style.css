@@ -170,6 +170,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   left: 0;
   z-index: -2;
 }
+.video-fluid2 {
+  width: 100%;
+
+
+}
 
 .text-white {
   text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5); /* Ajustează aici offset-ul și opacitatea umbrei */
@@ -10070,7 +10075,7 @@ h6,
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-  background: #222429;
+  background: black;
   opacity: 1;
 }
 
