@@ -111,6 +111,30 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+.fa-whatsapp{
+  font-size: 35px;
+}
+.whatsapp-button {
+  position: fixed;
+  z-index: 5;
+  display: none;
+  bottom: 100px;
+  right: 25px;
+  background-color: #25d366; /* Culoarea oficială WhatsApp */
+  color: #fff;
+  border: none;
+  border-radius: 10%;
+  padding: 10px;
+  font-size: 35px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Culoare la hover */
+}
+
 @media (max-width: 767px) {
 
   .logo-img{
@@ -118,9 +142,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     
     
   }
-}
-
-.pagina{
+  .whatsapp-button {
+  display: block;}
+}.pagina{
   color: var(--primary);
 }
 .black-line {
