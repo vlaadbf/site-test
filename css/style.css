@@ -120,7 +120,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   }
 }
 
-
+.pagina{
+  color: var(--primary);
+}
 .black-line {
   background-color: rgb(8, 8, 8);
   padding: 10px 0;
@@ -156,6 +158,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   background: linear-gradient(to right, rgba(63, 63, 63, 0.507), rgba(0, 0, 0, 0.5)); /* Ajustează aici opacitatea și culoarea overlay-ului */
   z-index: -1;
 }
+.overlay-second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(to right, rgba(63, 63, 63, 0.507), rgba(0, 0, 0, 0.5)); /* Ajustează aici opacitatea și culoarea overlay-ului */
+  z-index: -1;
+}
 @media screen and (max-width: 767px) {
   .overlay {
       background: linear-gradient(to bottom, rgba(53, 53, 53, 0.516), rgba(0, 0, 0, 0.829)); /* Gradient pentru dispozitive mobile */
@@ -164,6 +175,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .video-fluid {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.video-fluid-second {
+  width: 100%;
+  height: 70%;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -196,8 +216,29 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   background-color: #90711b89 !important; /* Ajustează culoarea pentru starea de hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adaugă o umbră mai pronunțată la hover */
 }
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  background: var(--primary);
+}
+.banner {
+  color: #ffffff; /* Schimbă culoarea textului pentru contrast */
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  margin-top: 20px;
+}
 
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
 
+.banner p {
+  font-size: 18px;
+  margin-top: 10px;
+}
 body {
   margin: 0;
   font-family: "Rubik", sans-serif;
